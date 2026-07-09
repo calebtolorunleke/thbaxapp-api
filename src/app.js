@@ -2,11 +2,11 @@ const express = require("express");
 
 const app = express();
 
+const homeRoute = require("../src/routes/homeRoute");
+
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello word!");
-});
+app.get("/", homeRoute);
 
 app.get("/api", (req, res) => {
   res.json({
