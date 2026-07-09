@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-const homeRoute = require("../src/routes/homeRoute");
+const homeRoute = require("./src/routes/homeRoute");
 
 app.use(express.json());
 

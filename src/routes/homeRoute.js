@@ -1,9 +1,8 @@
 const express = require("express");
+const { homeController } = require("../controllers/homeController");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.status(200).send("Hello word!");
-});
+router.get("/", homeController);
 
 module.exports = router;
