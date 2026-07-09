@@ -1,6 +1,6 @@
 const profileController = (req, res) => {
   res.status(200);
-  res.json({
+  res.json([{
     id: 1,
     name: "Caleb Adebayo",
     role: "Frontend-Focused Full-Stack Engineer",
@@ -14,7 +14,7 @@ const profileController = (req, res) => {
       linkedin: "https://linkedin.com/in/calebtolorunleke",
       portfolio: "https://calebadebayo.dev/",
     },
-  });
+  }]);
 };
 
 module.exports = { profileController };

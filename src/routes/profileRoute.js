@@ -1,8 +1,8 @@
 const express = require("express");
-const {profileController} = require("../controllers/profileController");
+const { profileController } = require("../controllers/profileController");
 
 const router = express.Router();
 
-router.get("/profile", profileController);
+router.get("/api/profile", profileController);
 
 module.exports = router;
